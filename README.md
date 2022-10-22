@@ -1,6 +1,6 @@
 # Start
-npm i
-npm run dev / npm run build
+- npm i
+- npm run dev / npm run build
 
 # Features
 
@@ -8,3 +8,4 @@ npm run dev / npm run build
 - Sass/Scss
 - Pug
 - Babel
+- Postcss
