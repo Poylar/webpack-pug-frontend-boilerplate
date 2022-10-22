@@ -1,0 +1,6 @@
+mixin sprite(name , width = '16', height = '16')
+  svg(width=`${width}` height=`${height}` class="svg-icon")
+    use(xlink:href=`#${name}`)
+
+mixin c-include(className)
+  className= className 

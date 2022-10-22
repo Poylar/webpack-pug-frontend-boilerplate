@@ -1,0 +1,10 @@
+@use "./mixins" as *;
+:root {
+  --container: 1920px;
+  --text: var(--black);
+  @each $breakpoint, $val in $breakpoints {
+    @include media($breakpoint) {
+      --container: #{$val};
+    }
+  }
+}

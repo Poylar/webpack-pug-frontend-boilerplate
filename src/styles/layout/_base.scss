@@ -1,0 +1,46 @@
+@use "../utils/mixins" as *;
+@use "../utils/vars" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--white);
+  color: var(--text);
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  min-width: 320px;
+  overflow-x: hidden;
+ 
+}
+
+.oh {
+  overflow: hidden;
+}
+
+.hidden-desktop {
+  @include media(lg, min-width) {
+    display: none;
+  }
+}
+
+.hidden-mobile {
+  @include media(lg) {
+    display: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

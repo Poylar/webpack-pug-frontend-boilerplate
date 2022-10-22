@@ -1,0 +1,7 @@
+@use "./mixins" as *;
+
+
+
+@include font-face(HeadingNow, '../assets/fonts/Heading-Now-83-Book', 350, normal, woff2 woff);
+@include font-face(Montserrat, '../assets/fonts/Montserrat-Regular', 400, normal, woff2 woff);
+@include font-face(Montserrat, '../assets/fonts/Montserrat-Medium', 500, normal, woff2 woff);
