@@ -3,6 +3,9 @@
 
 * {
   box-sizing: border-box;
+  &:focus-within {
+    outline: 1px solid black;
+  }
 }
 
 picture {
@@ -21,7 +24,6 @@ body {
   font-weight: 400;
   min-width: 320px;
   overflow-x: hidden;
- 
 }
 
 .oh {

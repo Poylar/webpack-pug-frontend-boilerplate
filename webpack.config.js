@@ -8,9 +8,12 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 const pagesDir = './src/pug/pages';
 const filenames = fs.readdirSync(pagesDir);
-const isProd = (process.env.NODE_ENV == 'production');
+
+const isProd = process.env.NODE_ENV == 'production';
 const isDev = !isProd;
+
 console.log(process.env.NODE_ENV);
+
 module.exports = {
   mode: isDev,
   devtool: isDev ? 'source-map' : false,
